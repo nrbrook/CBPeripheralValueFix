@@ -9,3 +9,6 @@
 - (void)valueWritten;
 
 @end
+
+// import implementation file to avoid need for -ObjC in App linker flags
+#import "CBCharacteristic(ValueFix).m"
