@@ -6,9 +6,9 @@
 
 @interface CBCharacteristic (ValueFix)
 
-@property(nonatomic, readonly) NSData *realValue;
+@property(nonatomic, readonly, nullable) NSData *realValue;
 
-- (void)writeValue:(NSData *)data type:(CBCharacteristicWriteType)type;
+- (void)writeValue:(nonnull NSData *)data type:(CBCharacteristicWriteType)type;
 - (void)localValueUpdated;
 - (void)valueWritten;
 
